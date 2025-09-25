@@ -1,0 +1,358 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+/* Базове відображення зображень як блокових елементів */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ====================== HEADER STRUCTURE ====================== */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header_wrap {
+  display: flex; /* навігація + контакти в один рядок */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.nav_main {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 76px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.logo_accent {
+  color: #2e2f42;
+}
+
+.menu_list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu_item {}
+
+.menu_link {
+  display: inline-block;
+  padding: 24px 0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.menu_link:hover,
+.menu_link:focus {
+  color: #404bbf;
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.contacts_list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts_item {}
+
+.contacts_link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.contacts_link:hover,
+.contacts_link:focus {
+  color: #404bbf;
+}
+
+/* Перша секція */
+:root {
+  --accent-color: #4d5ae5; /* змінна для кольору кнопки */
+}
+
+.solutions {
+  height: auto;
+  background-image: 
+  linear-gradient (rgba(46, 47, 66, 0.7)), 
+  url(../images/people-office.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+
+}
+
+.solutions {
+  background-color: #2e2f42;
+  padding: 188px 0; /* відступи секції */
+}
+
+.solutions-title {
+  max-width: 496px; /* ширина заголовка */
+  margin: 0 auto 48px; /* центрування і відступ знизу */
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.solutions-button {
+  display: block; /* щоб можна було центрувати margin-ом */
+  min-width: 169px;
+  height: 56px;
+  margin: 0 auto; /* центрування кнопки */
+  border: none;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.solutions-button:hover,
+.solutions-button:focus {
+  background-color: #404bbf;
+}
+
+/* Друга секція */
+.features {
+  padding: 120px 0; /* відступи всередині секції */
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.features-list {
+  display: flex;   /* елементи в рядок */
+  gap: 24px;       /* відстань між елементами */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-item {
+  width: calc((100% - 72px) / 4); /* 4 елементи в ряд */
+}
+
+.features-subtitle {
+  margin-bottom: 8px; /* відступ між заголовком і текстом */
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.features-description {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/* Третя секція */
+.team {
+  background-color: #f4f4fd;
+  padding: 120px 0; /* відступи всередині секції */
+}
+
+.team-title {
+  margin-bottom: 72px; /* відступ під заголовком секції */
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+
+.team-list {
+  display: flex;   /* елементи в рядок */
+  gap: 24px;       /* відстань між картками */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.team-item {
+  width: calc((100% - 72px) / 4); /* 4 колонки з урахуванням gap */
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px; /* заокруглення внизу */
+  overflow: hidden; /* щоб зображення не виходило за межі */
+}
+
+.team-image {
+  display: block; /* прибрати нижній відступ картинки */
+  width: 100%;
+  height: auto;
+}
+
+.team_card {
+  padding: 32px 0; /* внутрішні відступи контейнера підпису */
+}
+
+.team-subtitle {
+  margin-bottom: 8px; /* відступ між h3 та параграфом */
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.team-description {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/* Четверта секція */
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px; /* можна замінити на: padding: 120px 0; */
+}
+
+.portfolio-title {
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+
+/* Список карток */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;     /* перенос на новий рядок */
+  column-gap: 24px;    /* горизонтальні відступи */
+  row-gap: 48px;       /* вертикальні відступи */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Елемент списку (3 в рядок) */
+.portfolio-item {
+  width: calc((100% - 48px) / 3);
+}
+
+/* Зображення */
+.portfolio-image {
+  display: block; /* прибрати нижній inline-gap */
+  width: 100%;
+  height: auto;
+}
+
+/* Підпис під карткою */
+.portfolio_card {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none; /* лінія не дублюється над зображенням */
+}
+
+/* Заголовок картки */
+.portfolio-subtitle {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+/* Опис картки */
+.portfolio-description {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/* Футер секція */
+.footer {
+  background-color: #2e2f42;
+  padding: 100px 0; /* відступи всередині футера */
+}
+
+.footer-logo {
+  display: inline-block; /* блочні властивості */
+  margin-bottom: 16px;   /* відступ від тексту */
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none;
+}
+
+.footer-logo-accent {
+  color: #f4f4fd;
+}
+
+.footer-description {
+  max-width: 264px; /* максимальна ширина тексту */
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
